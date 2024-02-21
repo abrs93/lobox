@@ -1,0 +1,99 @@
+$fontColor: #5f6164;
+
+
+.multiDropDown{
+  border-radius: 2px;
+  padding: 10px;
+  margin: 20px;
+  display: block;
+  width: 400px;
+  max-width: 100%;
+
+  .inputBox{
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 20px;
+    display: flex;
+    max-width: 100%;
+    justify-content: space-between;
+    margin-bottom: 0px;
+    border-radius: 10px;
+    .expandCloseIcon{
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      img{
+        height: 10px;
+        width: 10px;
+      }
+    }
+    input{
+      outline: none;
+      appearance: none;
+      border: none;
+      width: 90%;
+      height: 25px;
+      font-size: 16px;
+      color : $fontColor;
+    }
+  }
+  
+  .hideDropDown{
+    height: 0px;
+    .dropDownBox{
+      height: inherit;
+      display: none;
+    }
+  }
+  
+  .dropdown{
+    height: 200px;
+    margin: 20px;
+    color : $fontColor;
+    margin-top: 13px;
+    border: 1px solid #88888842;
+    border-radius: 13px;
+    padding: 15px;
+    padding-right: 0px;
+    transition: height 0.25s ease-in;
+  
+    .dropDownBox{
+      overflow-y: scroll;
+      scrollbar-color: #c4c6ca #fff;
+      scrollbar-width: thin;
+      height: inherit;
+      font-size: 16px;
+      font-weight: 400;
+  
+      
+
+      .dropDownOption {
+        height: 30px;
+        justify-content: space-between;
+        display: flex;
+        align-items: center;
+        padding: 5px 10px;
+        border-radius: 10px;
+        cursor: pointer;
+
+        .checkIcon{
+          display: flex;
+          align-items: center;
+          cursor: pointer;
+          img{
+            height: 25px;
+            width: 50px;
+          }
+        }
+      }
+    
+      .dropDownOptionSelected {
+        background:#f2f4ff;
+        color: #8c9de8;
+      }
+      
+    }
+  
+    
+  }
+}
